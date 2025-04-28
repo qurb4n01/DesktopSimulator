@@ -2,9 +2,9 @@
 ___________________________________________________________________
 Comp Grap SDF2
 
-Proyektin adi: Desktop Simulator
-Emeliyyat sistemimizin adi: Sinux (Sinus+Linux)
-Hazirlayanlar: Qurban Bennayev ve Rauf Celilov 
+## Proyektin adi: Desktop Simulator
+## Emeliyyat sistemimizin adi: Sinux (Sinus+Linux)
+## Hazirlayanlar: Qurban Bennayev ve Rauf Celilov 
 
 proyekt Desktop Simulatordur, basic dille kompyuter icinde kompyuter. yapay Desktopumuzun icinde 3app var: CMD, Calc, Chrome. CMDde cd,ls,cat,whoami kimi komandalar calisdirma olur. Calculatorda + - * / kimi operatorlar calistirmaq olur. Chromeda 2 "sayta" getmek olur: GitHub.com ve hacibenqbenq.com. proyekt qisa olaraq overview bu qeder, indi ise koddaki funksiyalar ne ise yariyir onlari izah edecem:
 
