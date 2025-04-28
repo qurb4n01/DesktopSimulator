@@ -16,7 +16,7 @@ w is the width,
 h is the height.
 It connects four points in counter-clockwise order to form a filled shape.
 bunu Desktopdaki cmd,chrome ve calc obyektlerini draw etmek ucun yazdim
-
+___
 
 drawText() draws a text string onto the screen at the given (x, y) position,
 character by character, using a bitmap font (Helvetica 18 size).
