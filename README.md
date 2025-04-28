@@ -8,7 +8,7 @@ Comp Grap SDF2
 
 proyekt Desktop Simulatordur, basic dille kompyuter icinde kompyuter. yapay Desktopumuzun icinde 3app var: CMD, Calc, Chrome. CMDde cd,ls,cat,whoami kimi komandalar calisdirma olur. Calculatorda + - * / kimi operatorlar calistirmaq olur. Chromeda 2 "sayta" getmek olur: GitHub.com ve hacibenqbenq.com. proyekt qisa olaraq overview bu qeder, indi ise koddaki funksiyalar ne ise yariyir onlari izah edecem:
 
-
+___
 drawRect() draws a filled rectangle in 2D space using OpenGL,
 where:
 (x, y) is the bottom-left starting point,
@@ -22,14 +22,14 @@ drawText() draws a text string onto the screen at the given (x, y) position,
 character by character, using a bitmap font (Helvetica 18 size).
 OpenGL doesn't have text drawing by default, so GLUT provides simple bitmap fonts. This function manually draws each character next to the previous one.
 bunu cmd,chrome ve calcda yazi yazmaq ucun yazdim
-
+___
 
 splitTextIntoLines() takes a big text string
 Cuts it into multiple smaller lines,
 Each line has at most maxLineWidth characters.
 It basically formats long text into a list of shorter lines so you can display it nicely without the text overflowing or running too wide.
 bunu chromeda text box dan kenara cixmasin deye yazdim
-
+___
 
 The display() function is used to render the graphical interface of a window with multiple interactive components, such as:
 Background: Clears the screen and renders a background rectangle (light blue).
@@ -39,7 +39,7 @@ Calculator Window (if open): If the calculator is open, it renders a gray window
 Browser Window (if open): If the browser is open, it renders a black window with an input for a URL and the output displayed below.
 Text Rendering: Displays texts like app names, terminal output, calculator expressions, and browser content, making sure that everything fits within the window boundaries.
 Buffer Swap: Finally, it swaps the buffers to display the rendered frame.
-
+___
 
 The mouse() function handles mouse events (specifically mouse clicks) in a graphical user interface (GUI) created using OpenGL and GLUT. It allows the user to interact with different application icons and perform actions such as opening, closing, and interacting with apps (CMD, Calculator, and Chrome). The function is designed to manage the state of these apps based on where and what the user clicks in the window. Here's a breakdown of its overall flow:
 Mouse Button Down Detection:
@@ -54,27 +54,27 @@ Calculator "Clear" Button Detection:
 In addition to closing the Calculator, the function checks if the user clicks the "CLEAR" button within the Calculator app. If clicked, the input and result fields of the Calculator are cleared.
 Redrawing the Window:
 After handling all the mouse click events, the function calls glutPostRedisplay(). This triggers the window to be redrawn, reflecting the updated state of the application, such as whether the apps are open or closed and whether the inputs have been cleared.
-
+___
 
 The calculate() function is designed to evaluate simple mathematical expressions (addition, subtraction, multiplication, division) provided as strings. It extracts the operands and operator from the string, performs the calculation, and returns the result as a string. It also handles errors like division by zero and invalid operators gracefully.
-
+___
 
 The keyboard() function listens for keyboard events and updates the application based on which "app" (CMD, Calculator, or Chrome) is currently active.
 For the CMD app, it processes shell-like commands, executes them, and displays the output.
 For the Chrome app, it simulates browsing, providing fixed responses to specific inputs.
 For the Calculator app, it processes mathematical expressions and displays the results.
 After each input event (whether a command or key), the display is updated by calling glutPostRedisplay().
-
+___
 
 run_ls(): Lists the files and subdirectories of the current directory. It uses the files and subfolders vectors from the currentDir object.
 run_cd(const std::string& dir): Changes the current directory to the specified folder, or moves to the parent directory if ".." is provided. If the directory does not exist, an error message is shown.
 run_cat(const std::string& filename): Displays the content of a specified file in the current directory. If the file is not found, it shows an error message.
-
+___
 
 The setup2D() function configures OpenGL to use a 2D orthogonal projection.
 It sets the projection matrix to an identity matrix, then defines the 2D coordinate system (with the origin at the bottom-left corner).
 It finally switches back to the modelview matrix for further transformations related to the objects themselves.
-
+___
 
 The initFileSystem() function initializes a simple in-memory file system with the following structure:
 / (Root)
@@ -87,10 +87,10 @@ The initFileSystem() function initializes a simple in-memory file system with th
 It creates the root directory and three subdirectories: Desktop, Documents, and Downloads.
 Each folder has a few files with predefined content, and the root directory holds references to these subfolders.
 This setup mimics a simple file system where users can navigate between directories and view or edit files.
-
+___
 
 main() function follows the standard pattern for small OpenGL/GLUT applications.
-
+___
 
 
 
