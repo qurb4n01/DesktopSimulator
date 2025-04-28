@@ -106,33 +106,37 @@ vector: To use std::vector, a dynamic array (resizable list).
 sstream: To split strings into pieces easily (std::istringstream).
 
 
-№Global Variables:
+## Global Variables:
+```cpp
 std::vector<std::string> terminalOutputLines;
 std::vector<std::string> chromeOutputLines;
-______
+```
 terminalOutputLines → what gets printed in your command line output.
 chromeOutputLines → used for simulating webpage display output, especially when it's too long.
 
 
 ## Window Size:
+```cpp
 int window_width = 800;
 int window_height = 600;
-
+```
 
 ## Calculator Variables:
+```cpp
 std::string calcInput = "";
 std::string calcResult = "";
-______
+```
 calcInput: What the user is typing into the calculator.
 calcResult: The result of the calculation after pressing Enter.
 
 
 ## Terminal and Chrome Inputs:
+```cpp
 std::string inputBuffer = "";
 std::string chromeInput = "";
 bool chromeIsActive = false;
 std::string chromeOutput = "";
-______
+```
 inputBuffer: Stores what the user types in the CMD/Terminal app.
 chromeInput: Stores what the user types in the Chrome address bar.
 chromeIsActive: A flag to indicate if Chrome input is currently being typed.
@@ -140,11 +144,12 @@ chromeOutput: What Chrome should display after loading the page (github account,
 
 
 ## Function Declarations:
+```cpp
 void run_ls();
 void run_cd(const std::string& dir);
 void run_cat(const std::string& filename);
 void run_chrome();
-______
+```
 run_ls(): Lists files/folders.
 run_cd(dir): Changes the directory.
 run_cat(filename): Displays file contents.
@@ -152,12 +157,13 @@ run_chrome(): (You declared it, but not shown yet — maybe you planned a separa
 
 
 ## Structures:
+```cpp
 struct AppIcon {
     float x, y, size;
     std::string name;
     bool is_open;
 }
-______
+```
 x, y: Position on the screen.
 size: Size (width/height) of the icon.
 name: App's name (e.g., "CMD", "Calc", "Chrome").
@@ -165,12 +171,13 @@ is_open: Whether the app is currently open (clicked).
 
 
 ## App icons array:
+```cpp
 AppIcon icons[] = {
     {100, 500, 64, "CMD", false},
     {200, 500, 64, "Calc", false},
     {300, 500, 64, "Chrome", false}
 };
-______
+```
 Purpose: Create 3 icons on the desktop.
 Explanation:
 CMD (Terminal) at (100,500),
@@ -180,11 +187,12 @@ They all start closed (is_open = false).
 
 
 ## File:
+```cpp
 struct File {
     std::string name;
     std::string content;
 };
-______
+```
 Purpose: Represents a file (filename + what's inside it).
 Fields:
 name: Name of the file (e.g., "flag.txt").
@@ -192,13 +200,14 @@ content: The file's actual text content.
 
 
 ## Folder:
+```cpp
 struct Folder {
     std::string name;
     std::vector<File> files;
     std::vector<Folder*> subfolders;
     Folder* parent = nullptr;
 };
-______
+```
 Purpose: Represents a folder (directory) in your file system.
 Fields:
 name: Folder name (e.g., "Desktop").
@@ -208,10 +217,11 @@ parent: Pointer to the folder's parent (helps with cd .. command).
 
 
 ## Root and Current Directory:
+```cpp
 Folder root;
 Folder* currentDir;
 std::vector<std::string> terminalOutput;
-_______
+```
 root:
 The "root" directory /.
 Everything (Desktop, Documents, Downloads) is a subfolder of this.
