@@ -10,12 +10,12 @@ proyekt Desktop Simulatordur, basic dille kompyuter icinde kompyuter. yapay Desk
 
 ___
 drawRect() draws a filled rectangle in 2D space using OpenGL,  
-where:
-(x, y) is the bottom-left starting point,
-w is the width,
-h is the height.
-It connects four points in counter-clockwise order to form a filled shape.
-bunu Desktopdaki cmd,chrome ve calc obyektlerini draw etmek ucun yazdim
+where:  
+(x, y) is the bottom-left starting point,  
+w is the width,  
+h is the height.  
+It connects four points in counter-clockwise order to form a filled shape.  
+bunu Desktopdaki cmd,chrome ve calc obyektlerini draw etmek ucun yazdim  
 ___
 
 drawText() draws a text string onto the screen at the given (x, y) position,
