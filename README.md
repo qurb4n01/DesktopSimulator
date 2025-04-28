@@ -9,7 +9,7 @@ Comp Grap SDF2
 proyekt Desktop Simulatordur, basic dille kompyuter icinde kompyuter. yapay Desktopumuzun icinde 3app var: CMD, Calc, Chrome. CMDde cd,ls,cat,whoami kimi komandalar calisdirma olur. Calculatorda + - * / kimi operatorlar calistirmaq olur. Chromeda 2 "sayta" getmek olur: GitHub.com ve hacibenqbenq.com. proyekt qisa olaraq overview bu qeder, indi ise koddaki funksiyalar ne ise yariyir onlari izah edecem:
 
 ___
-drawRect() draws a filled rectangle in 2D space using OpenGL,
+drawRect() draws a filled rectangle in 2D space using OpenGL,  
 where:
 (x, y) is the bottom-left starting point,
 w is the width,
