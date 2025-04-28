@@ -8,13 +8,13 @@ Comp Grap SDF2
 
 proyekt Desktop Simulatordur, basic dille kompyuter icinde kompyuter. yapay Desktopumuzun icinde 3app var: CMD, Calc, Chrome. CMDde cd,ls,cat,whoami kimi komandalar calisdirma olur. Calculatorda + - * / kimi operatorlar calistirmaq olur. Chromeda 2 "sayta" getmek olur: GitHub.com ve hacibenqbenq.com. proyekt qisa olaraq overview bu qeder, indi ise koddaki funksiyalar ne ise yariyir onlari izah edecem:  
 
-<img src="https://github.com/user-attachments/assets/3fd6c8ce-6d07-4ac0-becc-d90b7f87ea99" width="300">
-<img src="https://github.com/user-attachments/assets/836b5ced-2565-4dbe-8944-a21e0e800b67" width="300">
-<img src="https://github.com/user-attachments/assets/a1065f18-e419-497c-a38c-f3f28feee945" width="300">
-<img src="https://github.com/user-attachments/assets/b35c2cc5-9b99-440e-b933-9a8e7702dbdc" width="300">
-<img src="https://github.com/user-attachments/assets/2a174b56-a444-4f51-964a-3e186481c38c" width="300">
-<img src="https://github.com/user-attachments/assets/bdebd57f-e8dc-479c-9625-6d18ae3ea773" width="300">
-<img src="https://github.com/user-attachments/assets/3480f242-4cef-4237-b9e7-fbe179e3e105" width="300">
+<img src="https://github.com/user-attachments/assets/3fd6c8ce-6d07-4ac0-becc-d90b7f87ea99" width="800">
+<img src="https://github.com/user-attachments/assets/836b5ced-2565-4dbe-8944-a21e0e800b67" width="400">
+<img src="https://github.com/user-attachments/assets/a1065f18-e419-497c-a38c-f3f28feee945" width="400">
+<img src="https://github.com/user-attachments/assets/b35c2cc5-9b99-440e-b933-9a8e7702dbdc" width="400">
+<img src="https://github.com/user-attachments/assets/2a174b56-a444-4f51-964a-3e186481c38c" width="400">
+<img src="https://github.com/user-attachments/assets/bdebd57f-e8dc-479c-9625-6d18ae3ea773" width="400">
+<img src="https://github.com/user-attachments/assets/3480f242-4cef-4237-b9e7-fbe179e3e105" width="400">
 
 
 
